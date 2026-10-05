@@ -1,0 +1,240 @@
+:root {
+  --vp-c-brand-1: #26764f;
+  --vp-c-brand-2: #1d6542;
+  --vp-c-brand-3: #174f35;
+  --vp-c-brand-soft: rgba(38, 118, 79, 0.12);
+  --vp-home-hero-name-color: #1d6542;
+  --vp-home-hero-name-background: linear-gradient(120deg, #1d6542 25%, #55a477 100%);
+}
+
+.dark {
+  --vp-c-brand-1: #7bc99c;
+  --vp-c-brand-2: #64b989;
+  --vp-c-brand-3: #4e9e70;
+  --vp-c-brand-soft: rgba(123, 201, 156, 0.14);
+  --vp-home-hero-name-color: #9bddb6;
+  --vp-home-hero-name-background: linear-gradient(120deg, #9bddb6 25%, #54a979 100%);
+}
+
+.VPHome .VPHero .name {
+  letter-spacing: -0.045em;
+}
+
+.VPHome .VPHero .text {
+  max-width: 680px;
+  letter-spacing: -0.035em;
+}
+
+.VPHome .VPHero .tagline {
+  max-width: 590px;
+  line-height: 1.65;
+}
+
+.VPHome .VPHero .image-src {
+  max-width: min(480px, 100%);
+  max-height: 300px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 16px;
+  box-shadow: 0 18px 44px rgba(20, 38, 28, 0.16);
+}
+
+.VPHome .VPFeature {
+  border-radius: 16px;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.VPHome .VPFeature:hover {
+  border-color: var(--vp-c-brand-1);
+  transform: translateY(-2px);
+}
+
+.guide-start {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 170px;
+  align-items: center;
+  gap: 28px;
+  margin: 32px 0 42px;
+  padding: clamp(24px, 5vw, 44px);
+  overflow: hidden;
+  border: 1px solid var(--vp-c-brand-soft);
+  border-radius: 22px;
+  background: linear-gradient(115deg, var(--vp-c-brand-soft), var(--vp-c-bg-soft) 70%);
+}
+
+.guide-start h2 {
+  margin: 10px 0 8px;
+  border: 0;
+  letter-spacing: -0.03em;
+}
+
+.guide-start p {
+  max-width: 620px;
+  margin: 0 0 16px;
+  color: var(--vp-c-text-2);
+  line-height: 1.7;
+}
+
+.guide-start a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.guide-kicker,
+.guide-links a > span {
+  color: var(--vp-c-brand-1);
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+}
+
+.guide-stat {
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  padding: 22px 12px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 18px;
+  background: var(--vp-c-bg);
+  text-align: center;
+}
+
+.guide-stat strong {
+  color: var(--vp-c-brand-1);
+  font-size: 54px;
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+
+.guide-stat span {
+  max-width: 120px;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.guide-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 22px 0 38px;
+}
+
+.guide-links a {
+  position: relative;
+  display: flex;
+  min-height: 174px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 20px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 16px;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.guide-links a:hover {
+  border-color: var(--vp-c-brand-1);
+  transform: translateY(-2px);
+}
+
+.guide-links strong {
+  padding-right: 14px;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.guide-links small {
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.guide-links b {
+  position: absolute;
+  top: 17px;
+  right: 18px;
+  color: var(--vp-c-brand-1);
+  font-size: 17px;
+}
+
+.vp-doc .game-screenshot {
+  margin: 24px 0 34px;
+}
+
+.game-screenshot a {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 14px;
+  background: var(--vp-c-bg-soft);
+}
+
+.game-screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.game-screenshot figcaption {
+  padding-top: 9px;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .VPHome .VPHero .image-src {
+    max-width: min(340px, 100%);
+    max-height: 220px;
+  }
+
+  .guide-start {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 24px;
+    border-radius: 18px;
+  }
+
+  .guide-stat {
+    grid-template-columns: auto 1fr;
+    justify-items: start;
+    gap: 14px;
+    text-align: left;
+  }
+
+  .guide-stat strong {
+    font-size: 42px;
+  }
+
+  .guide-stat span {
+    max-width: none;
+  }
+
+  .guide-links {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-links a {
+    min-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .VPHome .VPFeature,
+  .guide-links a {
+    transition: none;
+  }
+
+  .VPHome .VPFeature:hover,
+  .guide-links a:hover {
+    transform: none;
+  }
+}
