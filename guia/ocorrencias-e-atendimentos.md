@@ -23,7 +23,7 @@ As ocorrências são chamados que aparecem perto das suas unidades. Elas trazem 
 
 Abra um chamado para consultar os recursos necessários e as equipes disponíveis. O jogo mostra as opções que podem atendê-lo. Uma equipe precisa estar livre na mesma base que a viatura compatível.
 
-Depois do despacho, a viatura segue pelo trajeto, atende no local e retorna à sua base. Chamados de saúde que pedem transferência seguem até o hospital indicado. Em ocorrências policiais com prisão, a viatura pode levar a pessoa detida a uma carceragem disponível. Ao chegar ao destino, a equipe é liberada para novos serviços.
+Depois do despacho, a viatura segue pelo trajeto e atende no local pelo tempo definido para aquele tipo de chamado. Ao fim do atendimento, o sistema informa se haverá transferência e, quando houver, indica uma unidade compatível e disponível: um hospital ou outra base do SAMU. A própria base de origem não recebe a transferência; sem outro destino elegível, o atendimento termina no local. Em ocorrências policiais com prisão, a viatura pode levar a pessoa detida a uma base com carceragem. Ao chegar ao destino, a equipe é liberada para novos serviços.
 
 <figure class="game-screenshot">
   <a :href="withBase('/images/jogo-detalhe-ocorrencia.png')"><img :src="withBase('/images/jogo-detalhe-ocorrencia.png')" alt="Detalhes de um acidente de trânsito, com recursos necessários e seleção de equipe para despacho." /></a>
@@ -34,7 +34,7 @@ A lista de ocorrências ajuda a encontrar chamados pelo nome, categoria, situaç
 
 ## Acompanhe cada etapa
 
-O estado do chamado informa se ele está aguardando equipe, a caminho, no local, em transporte, em atendimento ou registro na unidade de destino, ou concluído. A viatura pode voltar enquanto a unidade finaliza o atendimento ou o registro da pessoa detida.
+O estado do chamado informa se ele está aguardando equipe, a caminho, no local, em transferência, em atendimento ou registro na unidade de destino, ou concluído. A necessidade e o destino da transferência só aparecem após o atendimento no local. A viatura pode voltar enquanto a unidade finaliza o atendimento ou o registro da pessoa detida.
 
 Uma viatura que já está voltando pode receber um novo chamado compatível. A nova rota parte de onde ela estiver, então sua equipe pode voltar ao trabalho sem esperar chegar à base.
 
