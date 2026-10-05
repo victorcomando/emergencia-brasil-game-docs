@@ -26,27 +26,19 @@ O hospital não envia viaturas. Ele complementa o atendimento do SAMU quando uma
 
 Escolha a unidade no catálogo e posicione-a no mapa. Você pode pagar o custo indicado com dinheiro ou ouro. A construção começa assim que a unidade é colocada; se quiser, pode usar ouro para terminá-la imediatamente.
 
-| Unidade | Custo em dinheiro | Custo em ouro | Tempo de construção |
-| --- | ---: | ---: | ---: |
-| Quartel do Corpo de Bombeiros | R$ 15.000 | 15 | 3 minutos |
-| Base do SAMU | R$ 12.000 | 10 | 2 minutos |
-| Base da Polícia | R$ 10.000 | 8 | 2 minutos |
-| Hospital | R$ 25.000 | 25 | 6 minutos |
+<GameCatalogData section="construction-costs" />
 
 Cada unidade operacional de resposta começa com uma viatura e quatro funcionários. O hospital começa com quatro profissionais de saúde. Uma base de nível maior comporta mais viaturas e funcionários: até uma viatura e quatro funcionários por nível, até o nível 5. O hospital recebe pacientes conforme seus profissionais disponíveis.
 
 ## Evolua suas unidades
 
-Evoluir uma unidade aumenta a capacidade de viaturas e funcionários. A unidade continua atendendo chamados enquanto a melhoria fica pronta.
+Evoluir uma unidade aumenta a capacidade de viaturas e funcionários. A unidade continua atendendo chamados enquanto a melhoria fica pronta. Os custos, prazos e limites por nível são:
 
-| Próximo nível | Tempo para concluir |
-| --- | ---: |
-| Nível 2 | 1 minuto |
-| Nível 3 | 3 minutos |
-| Nível 4 | 8 minutos |
-| Nível 5 | 15 minutos |
+<GameCatalogData section="upgrade-levels" />
 
-Em uma unidade policial, você também pode instalar uma **carceragem** por R$ 15.000. A instalação leva 5 minutos e a unidade continua em serviço. Chamados com prisão podem então levar a pessoa detida até uma carceragem disponível; sem essa melhoria, não há condução para outra unidade.
+Em uma unidade policial, você também pode instalar uma **carceragem**. A unidade continua em serviço. Chamados com prisão podem então levar a pessoa detida até uma carceragem disponível; sem essa melhoria, não há condução para outra unidade.
+
+<GameCatalogData section="detention" />
 
 ## Cuide da capacidade
 

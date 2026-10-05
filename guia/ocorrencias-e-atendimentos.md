@@ -19,6 +19,10 @@ As ocorrências são chamados que aparecem perto das suas unidades. Elas trazem 
 - **Emergência médica:** atendimento do SAMU no próprio local.
 - **Ocorrência policial:** atendida pela Polícia; se houver prisão, uma unidade com carceragem pode receber a pessoa detida.
 
+Para jogadores ativos com bases operacionais, novos chamados aparecem dentro deste intervalo:
+
+<GameCatalogData section="incident-cadence" />
+
 ## Despache uma equipe
 
 Abra um chamado para consultar os recursos necessários e as equipes disponíveis. O jogo mostra as opções que podem atendê-lo. Uma equipe precisa estar livre na mesma base que a viatura compatível.

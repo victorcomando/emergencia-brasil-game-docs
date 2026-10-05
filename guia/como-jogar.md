@@ -4,7 +4,11 @@ O objetivo é construir uma rede de serviços de emergência e usá-la para aten
 
 ## Seu primeiro acesso
 
-Ao entrar no jogo, você começa com **R$ 15.000 e 100 ouros**. Use o mapa para escolher onde quer iniciar. Você pode navegar até uma cidade conhecida ou permitir que o mapa use sua localização para centralizar a região. O jogo não acompanha sua localização continuamente.
+Ao entrar no jogo, seu saldo inicial é:
+
+<GameCatalogData section="starting-balance" />
+
+Use o mapa para escolher onde quer iniciar. Você pode navegar até uma cidade conhecida ou permitir que o mapa use sua localização para centralizar a região. O jogo não acompanha sua localização continuamente.
 
 ## Um ciclo de jogo
 

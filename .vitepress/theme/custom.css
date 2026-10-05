@@ -225,6 +225,7 @@
   .guide-links a {
     min-height: 0;
   }
+
 }
 
 @media (prefers-reduced-motion: reduce) {

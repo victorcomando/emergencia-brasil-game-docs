@@ -1,4 +1,7 @@
 import { defineConfig } from 'vitepress'
+
+const apiProxyTarget = process.env.API_PROXY_TARGET ?? 'http://127.0.0.1:3000'
+
 export default defineConfig({
   lang: 'pt-BR',
   title: 'Emergência Brasil',
@@ -9,6 +12,9 @@ export default defineConfig({
       host: '127.0.0.1',
       port: 5175,
       strictPort: true,
+      proxy: {
+        '^/api(?:/|$)': { target: apiProxyTarget, changeOrigin: true },
+      },
     },
   },
   themeConfig: {
