@@ -6,17 +6,17 @@ As datas e os horários indicam quando cada mudança foi registrada. A disponibi
 
 ## 5 de outubro de 2026
 
-### Rotas acompanham o movimento das viaturas
+### 06:05 — Rotas acompanham o movimento das viaturas
 
 No mapa, o trajeto mostra apenas o caminho que ainda falta percorrer e avança junto com a viatura. Ele desaparece durante o atendimento parado e quando a etapa termina.
 
-### Transferências com regras mais claras
+### 06:05 — Transferências com regras mais claras
 
 Cada chamado tem um tempo de atendimento no local. Só depois dele o jogo define se haverá transferência e procura um destino compatível, em serviço e com equipe disponível. Ambulâncias do SAMU priorizam hospitais e podem seguir para outra base do SAMU; a própria base de origem não recebe a transferência. Ocorrências policiais podem seguir para outra base com carceragem. Sem destino elegível, o atendimento é concluído no local.
 
 Quando a viatura chega ao destino, sua equipe de campo é liberada e um profissional da unidade receptora continua o atendimento. A necessidade e o destino da transferência aparecem no chamado assim que essa decisão é tomada. Saiba mais em [Ocorrências e atendimentos](/guia/ocorrencias-e-atendimentos).
 
-### Ritmo das ocorrências e velocidade das viaturas
+### 06:05 — Ritmo das ocorrências e velocidade das viaturas
 
 Novas ocorrências agora seguem um intervalo aleatório de 5 a 20 minutos por jogador ativo. Cada tipo de viatura também tem uma velocidade padrão configurada no jogo; no momento, todas percorrem 1 km por minuto de jogo.
 
