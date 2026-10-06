@@ -13,7 +13,7 @@ export default defineConfig({
       port: 5175,
       strictPort: true,
       proxy: {
-        '^/api(?:/|$)': { target: apiProxyTarget, changeOrigin: true },
+        '^/api(?:/|$)': { target: apiProxyTarget, changeOrigin: true, xfwd: true },
       },
     },
   },
